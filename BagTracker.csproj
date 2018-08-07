@@ -43,7 +43,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BagTracker.cs" />
+    <Compile Include="Bug.cs" />
+    <Compile Include="Feature.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TechnicalDebt.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

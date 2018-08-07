@@ -10,6 +10,6 @@ namespace BagTracker
     {
         double;
 
-            public override double ()
+            public override double ( )
     }
 }

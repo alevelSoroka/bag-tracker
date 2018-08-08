@@ -44,7 +44,7 @@
   <ItemGroup>
     <Compile Include="BagTracker.cs" />
     <Compile Include="Classes\Tasks\Task.cs" />
-    <Compile Include="Classes\Tasks\Task1.cs" />
+    <Compile Include="Classes\Tasks\TaskPrivateMembers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

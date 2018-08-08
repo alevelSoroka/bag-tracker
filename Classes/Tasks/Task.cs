@@ -16,7 +16,14 @@ namespace BagTracker.Classes.Tasks
             }
             set
             {
-                _name = value;
+                if (string.IsNullOrEmpty(value))
+                {
+                    _name = value;
+                }
+                else
+                {
+                    throw new ArgumentNullException("Parameter cannot be null!!!");
+                }
             }
         }
         public float Complexity

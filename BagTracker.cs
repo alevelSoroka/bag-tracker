@@ -10,6 +10,8 @@ namespace BagTracker
     {
         static void Main(string[] args)
         {
+            int test = 1;
+            Console.WriteLine(test);
         }
     }
 }

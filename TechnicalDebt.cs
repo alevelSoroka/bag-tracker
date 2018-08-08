@@ -8,8 +8,21 @@ namespace BagTracker
 {
     class TechnicalDebt : Task
     {
-        double;
+        public TechnicalDebt(string name, string complexity) : base(name, complexity)
+        {
+            Prioriti = 0.5;
+        }
 
-            public override double ( )
+        public override float Prioriti
+        {
+            get
+            {
+                return _prioriti;
+            }
+            set
+            {
+                _prioriti = 0.5;
+            }
+        }
     }
 }

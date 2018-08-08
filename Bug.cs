@@ -8,8 +8,23 @@ namespace BagTracker
 {
     class Bug : Task
     {
-        double;
+        
 
-            public override double ( )
+        public Bug(string name, string complexity) : base(name, complexity)
+        {
+            Prioriti = 2;
+        }
+
+        public override float Prioriti
+        {
+            get
+            {
+                return _prioriti;
+            }
+            set
+            {
+                _prioriti = 2;
+            }
+        }
     }
 }

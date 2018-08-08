@@ -8,8 +8,21 @@ namespace BagTracker
 {
     class Feature : Task
     {
-        double;
+        public Feature(string name, string complexity) : base(name, complexity)
+        {
+            Prioriti = 1;
+        }
 
-            public override double ( )
+        public override float Prioriti
+        {
+            get
+            {
+                return _prioriti;
+            }
+            set
+            {
+                _prioriti = 1;
+            }
+        }
     }
 }

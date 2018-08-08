@@ -9,7 +9,7 @@ namespace BagTracker.Classes.Tasks
     abstract partial class Task
     {
         private string _name;
-        private float _complexyti;
+        private float _complexity;
         private byte _priority;
         private float _iterationCounter;
         private Random _random = new Random();

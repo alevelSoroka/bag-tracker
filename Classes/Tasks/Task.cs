@@ -8,6 +8,7 @@ namespace BagTracker.Classes.Tasks
 {
     public abstract partial class Task
     {
+
         public string Name
         {
             get
@@ -16,7 +17,7 @@ namespace BagTracker.Classes.Tasks
             }
             set
             {
-                if (string.IsNullOrEmpty(value))
+                if (!string.IsNullOrEmpty(value))
                 {
                     _name = value;
                 }
@@ -26,31 +27,36 @@ namespace BagTracker.Classes.Tasks
                 }
             }
         }
-        public float Complexity
-        {
-            get
-            {
-                return _complexyti;
-            }
+
+        private string Complexity
+        { 
             set
             {
-                _complexyti = value;
+                if (float.TryParse(value, out float variable))
+                {
+                    if (variable > 0 & variable <= 5)
+                    {
+                        _complexity = variable + ((variable / 10) * variable);
+                    }
+                    else
+                    {
+                        throw new Exception("Сomplexity can be from 1 to 5!!!");
+                    }
+                }
+                else
+                {
+                    throw new Exception("It was not introduced number!!!");
+                }
             }
-        }
-        public virtual byte Priority
-        {
-            get
-            { return _priority; }
-            set
-            { _priority = value; }
         }
 
-        public Task(string name, float complexity)
+        public abstract float Prioriti { get; set; }
+
+        public Task(string name, string complexity)
         {
             this.Name = name;
-            this.Complexity = complexity + ((complexity / 10) * complexity);
-            _iterationCounter = Complexity * Priority;
-
+            this.Complexity = complexity;
+            _iterationCounter = _complexity * Prioriti;
         }
 
 

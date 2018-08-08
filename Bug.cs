@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BagTracker
 {
-    class Bug : BagTracker
+    class Bug : Task
     {
         double;
 

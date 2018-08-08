@@ -43,16 +43,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BagTracker.cs" />
+<<<<<<< HEAD
     <Compile Include="Bug.cs" />
     <Compile Include="Feature.cs" />
+=======
+    <Compile Include="Classes\Tasks\Task.cs" />
+    <Compile Include="Classes\Tasks\TaskPrivateMembers.cs" />
+>>>>>>> 7f19cfc9d5fd30998aa847de6d64f26d1a875dd8
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TechnicalDebt.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Classes\Tasks\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

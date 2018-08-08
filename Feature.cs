@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BagTracker
 {
-    class Feature : BagTracker
+    class Feature : Task
     {
         double;
 

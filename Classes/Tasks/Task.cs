@@ -28,7 +28,7 @@ namespace BagTracker.Classes.Tasks
             }
         }
 
-        private string Complexity
+        public string Complexity
         { 
             set
             {
